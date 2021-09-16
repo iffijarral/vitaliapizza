@@ -1,0 +1,339 @@
+body, html {
+    font-family: Arial;
+    font-size: 14px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        /*overflow-x: hidden;*/
+  }
+  #page-container {    
+    width: 100%;
+  }
+*:focus {
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+nav {    
+    z-index: 101;
+}
+.header {
+    
+    border-bottom: 5px solid red; background-color: #b8edb8;
+}
+.title {
+    border-bottom: 1px solid red;
+    margin-left: -2rem;
+    padding-top: 1rem;
+}
+.open {
+    border: 1px solid #28a745;
+    width: fit-content;
+    padding: 0rem 0.5rem;   
+    background-color: #ffffffff;
+}
+.make-me-sticky {
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    top: 0;
+      
+}
+.footer {
+    background-color: #b8edb8;    
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    line-height: 1;    
+}
+.logo {    
+    width: 10rem;
+}
+
+main {
+    padding-top: 20px;
+}
+
+.btnLogin {
+    color: black !important;
+}
+
+.modal-header {
+    background-color: #b8edb8 !important;
+    color: black !important;
+    
+}
+.modal-header i {
+    padding-left: 20px; 
+    padding-right: 10px
+}
+.modal-footer {
+    background-color: #b8edb8 !important;
+}
+.card {
+    margin-bottom: 1rem !important;
+}
+.card-header {
+    background-color: #b8edb8 !important;
+    color: black;  
+    cursor: pointer;  
+}
+
+.accordion .card-header:after {
+    font-family: 'FontAwesome';  
+    content: "\f068";
+    float: right; 
+    color: darkgreen;
+    font-size: small;
+}
+.accordion .card-header.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\f067"; 
+} 
+.action {
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    color: darkgreen !important;
+}
+i {
+    color: darkgreen !important;
+    margin-right: 0.5rem !important;
+}
+table {
+    margin-top: 1rem;
+}
+thead {
+    background-color: #b8edb8 !important;
+}
+.productBlock:not(:last-child) {
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+    border-bottom: 1px dotted #bdc2bd;
+}
+
+.badge {
+    padding-left: 9px;
+    padding-right: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+  }
+  
+.label-warning[href],
+.badge-warning[href] {
+background-color: #c67605;
+}
+#lblCartCount {
+    font-size: 12px;
+    background: #ff0000;
+    color: #fff;
+    padding: 0 5px;
+    vertical-align: top;
+    margin-left: -10px; 
+}
+.content{
+    padding-top: 20px;    
+    /*padding-bottom: 13.5rem;*/    /* Footer height */    
+      
+}
+.cartRow {
+    flex-direction: row !important;
+}
+
+.row {
+display: -ms-flexbox; /* IE10 */
+display: flex;
+-ms-flex-wrap: wrap; /* IE10 */
+flex-wrap: wrap;
+margin: 0 -16px;
+}
+  
+  .col-25 {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+  }
+  .col-30 {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+  }
+  .col-50 {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+  }
+  .col-70 {
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+  }
+  .col-75 {
+    -ms-flex: 75%; /* IE10 */
+    flex: 75%;
+  }
+  
+  
+  .col-25,
+  .col-30,
+  .col-50,
+  .col-70,
+  .col-75 {
+    padding: 0 16px;
+  }
+  
+  input[type=text], input[type=number], .select {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+  }
+  
+  hr {
+    border: 1px solid lightgrey;
+  }
+  
+  span.price {
+    float: right;
+    color: grey;
+  }
+.closeCart{
+    display: none;
+}
+.mobileOnly{
+    display: none;
+}
+.navbar {
+    /*padding: 0 !important;   
+    padding-right: 1rem;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;   */  
+    padding-left: 0 !important;
+}
+.list-group-item{
+    border: none !important;
+}
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+  @media (max-width: 800px) {
+    body, html {
+        -webkit-box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+        box-sizing: border-box !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        
+    }
+    .navbar-nav{
+        flex-direction: row !important;
+        
+    }
+    .nav-link {
+        padding-left: 0 !important;
+        padding-bottom: 0 !important;
+        padding-right: 0.3rem !important;
+    }
+    .navbar {
+        padding: 0 !important;   
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;     
+    }
+    .navbar-toggler {        
+        padding: 0 !important;        
+    }
+    .title {
+        border-bottom: 1px solid red;
+        margin-left: -2rem;
+        padding-top: 1rem;
+    }
+ .open {
+        font-size: 0.8rem !important;                              
+    }
+    .modal-header .row {
+        flex-direction: row !important;
+    }
+    .row {
+      flex-direction: column-reverse;
+    }
+    .productBlock {
+        flex-direction: row !important;
+    }
+    .logo {    
+        width: 5rem;
+    }
+    h4 {
+        font-size: 1rem !important;
+    }
+    .header {
+        flex-direction: column !important;
+        position: fixed;
+        right: 0;
+        left: 0;           
+        top: 0; 
+        z-index: 102;       
+    }
+    
+    .cartRow {
+        flex-direction: row !important;
+    }
+    .col-25 {
+      margin-bottom: 20px;
+    }
+    .closeCart{
+        display: block;
+    }
+    .showCart {
+        display: block !important;       
+    }
+    .hideCart {
+        display: none !important;        
+    }
+    
+    .mobileOnly {
+        display: inline-block;
+    }
+    .footer {        
+        font-size: 0.8rem;
+        position: relative;        
+    }
+    .footer h5, h4 {
+        font-size: 1rem;
+    }
+    .footer .row {
+        flex-direction: column;        
+        align-items: center;
+    }
+    .footer .col-25 {
+        margin: 0 !important;
+    }
+    nav ul {
+        float: right !important;
+        padding-right: 0.5rem;        
+    }
+    nav ul li {
+        padding-left: 1rem;
+    }
+    nav ul li a {
+        cursor: pointer;
+    }
+    .navbar-nav .dropdown-menu {
+        position: absolute !important;
+    }
+    .content{
+        padding-top: 100px;        
+    }
+  }
+
+  @media print {
+    body * { visibility: hidden; }
+    #orderDetailModal * { visibility: visible; }
+    #orderDetailModal .row { flex-direction: row !important; }
+    }
